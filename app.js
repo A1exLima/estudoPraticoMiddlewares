@@ -40,7 +40,10 @@ app.use('/', IndexRouter);
 //.................................................................................
 
 // Caso não seja encontrado nenhuma das páginas acima, aplicar redirecionamento para erro 404
-app.use((req, res, next) => {res.status(404).render('not-found.ejs') });
+app.use((req, res, next) => {
+    res.status(404).render('not-found.ejs');
+    next(); 
+});
 
 
 // Configurando porta para inicializacao do servidor (Running port 3000)
