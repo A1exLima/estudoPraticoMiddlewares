@@ -20,3 +20,4 @@ router.get('/cadastro', IndexController.cadastro);
 
 // Exportando o index router para ser usado no Indexcontroller
 module.exports = router; 
+

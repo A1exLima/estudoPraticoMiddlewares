@@ -33,9 +33,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //BLOCO PARA USO DE ROTAS DO PROJETO (REQUISICAO ROTEADOR E INDICACAO CAMINHO)
 
+
+
 // Router Index
 const IndexRouter = require ('./routers/RouterIndex');
-app.use('/', IndexRouter);
+// Faz a requisicao da do Middleware
+const registroRotas = require('./middlewares/logRotas');
+// Inclui como segundo parametro o Middleware global para capturar a data hora e rota acessada
+app.use('/', registroRotas, IndexRouter);
 
 //.................................................................................
 

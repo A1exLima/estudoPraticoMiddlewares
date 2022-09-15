@@ -1,0 +1,10 @@
+Data: 2022-09-15 - Hora: 00:04:56 - Rota: /
+Data: 2022-09-15 - Hora: 00:04:56 - Rota: /
+Data: 2022-09-15 - Hora: 00:04:57 - Rota: /produtos
+Data: 2022-09-15 - Hora: 00:04:57 - Rota: /produtos
+Data: 2022-09-15 - Hora: 00:04:58 - Rota: /contato
+Data: 2022-09-15 - Hora: 00:04:58 - Rota: /contato
+Data: 2022-09-15 - Hora: 00:04:59 - Rota: /minhaConta
+Data: 2022-09-15 - Hora: 00:04:59 - Rota: /minhaConta
+Data: 2022-09-15 - Hora: 00:05:00 - Rota: /cadastro
+Data: 2022-09-15 - Hora: 00:05:00 - Rota: /cadastro
