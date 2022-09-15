@@ -25,7 +25,6 @@ function registroRotas (req, res, next) {
     fs.appendFileSync(caminhoRegistroLogRotas,`Data: ${strDataHora} - Rota: ${rota}\n`);
 
     // Passa para o proximo Middleware
-
     next();
 }
 
