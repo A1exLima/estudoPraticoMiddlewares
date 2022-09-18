@@ -1,12 +1,14 @@
 [
     {
-        "nomeCompleto": "Alex da Silva Lima",
-        "email": "asda@me.com",
-        "senha": "123"
+        "nomeCompleto": "Paulo Henrique Lima",
+        "email": "paulo.herique@email.com",
+        "senha": "12345",
+        "imagemUsuario": "imagemUsuario_1663544107121.png"
     },
     {
-        "nomeCompleto": "Andressa da Silva Lima",
-        "email": "asda@me.com",
-        "senha": "4321"
+        "nomeCompleto": "Alessandro Henrique Lima",
+        "email": "alessandro.herique@email.com",
+        "senha": "54321",
+        "imagemUsuario": "imagemUsuario_1663544137870.png"
     }
 ]
