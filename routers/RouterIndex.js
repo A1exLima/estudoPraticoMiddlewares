@@ -16,8 +16,17 @@ router.get('/', registroRotaHome, IndexController.index);
 router.get('/produtos', IndexController.produtos);
 // Rota para página HOME
 router.get('/contato', IndexController.contato);
+
+//-----------------------------------------------------//
 // Rota para página HOME
 router.get('/minhaConta', IndexController.minhaConta);
+
+
+
+
+
+//-----------------------------------------------------//
+
 // Rota para página HOME
 router.get('/cadastro', IndexController.cadastro);
 

@@ -4,3 +4,6 @@ Data: 2022-09-18 - Hora: 17:19:50 - Rota: /
 Data: 2022-09-18 - Hora: 17:19:51 - Rota: /
 Data: 2022-09-18 - Hora: 17:19:51 - Rota: /
 Data: 2022-09-18 - Hora: 17:19:51 - Rota: /
+Data: 2022-09-18 - Hora: 21:00:36 - Rota: /
+Data: 2022-09-18 - Hora: 21:00:37 - Rota: /
+Data: 2022-09-18 - Hora: 21:31:17 - Rota: /
