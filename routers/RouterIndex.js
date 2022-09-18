@@ -1,5 +1,7 @@
 // Requizicao do modulo NPM Express
 const express = require('express');
+// Requisao do Middleware para captura da data e hora de acesso da rota home
+const registroRotaHome = require('../middlewares/logRotaHome');
 
 // Confiuracao do modulo express para chamar a função como router
 const router = express.Router();
@@ -8,7 +10,8 @@ const router = express.Router();
 const IndexController = require('../controllers/IndexController');
 
 // Rota para página HOME
-router.get('/', IndexController.index);
+// Segundo parametro para chamar o middleware de rota registro Home
+router.get('/', registroRotaHome, IndexController.index);
 // Rota para página HOME
 router.get('/produtos', IndexController.produtos);
 // Rota para página HOME

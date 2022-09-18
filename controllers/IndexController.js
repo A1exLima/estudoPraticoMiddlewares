@@ -6,7 +6,6 @@ module.exports ={
     // Redenrizacao da página Home
     index: (req, res) =>{
         res.render("index.ejs");
-
     },
     produtos: (req, res) =>{
         res.render("produtos.ejs");

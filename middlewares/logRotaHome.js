@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-function registroRotas (req, res, next) {
+function registroRotaHome (req, res, next) {
 
     //var dt = new Date('2021-07-24T20:37:26.007' + 'Z');
     //console.log(dt.toLocaleString());
@@ -13,7 +13,7 @@ function registroRotas (req, res, next) {
     var strDataHora = dataHora.toISOString().substring(0,19).replace('T',' - Hora: ')
 
     // Define o caminho para salvar o registro do log
-    let caminhoRegistroLogRotas = path.resolve(`./logs/registroRotaGlobal/${strDataHora.substring(0,10)}_logRotas.txt`);
+    let caminhoRegistroLogRotas = path.resolve(`./logs/registroRotaHome/${strDataHora.substring(0,10)}_logRotaHome.txt`);
 
     // Define uma variavel para captura da rota ao acessa-la
     let rota = req.url;
@@ -25,4 +25,4 @@ function registroRotas (req, res, next) {
     next();
 }
 
-module.exports = registroRotas;
+module.exports = registroRotaHome;

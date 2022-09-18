@@ -1,0 +1,11 @@
+Data: 2022-09-18 - Hora: 17:19:49 - Rota: /
+Data: 2022-09-18 - Hora: 17:19:50 - Rota: /
+Data: 2022-09-18 - Hora: 17:19:50 - Rota: /
+Data: 2022-09-18 - Hora: 17:19:51 - Rota: /
+Data: 2022-09-18 - Hora: 17:19:51 - Rota: /
+Data: 2022-09-18 - Hora: 17:19:51 - Rota: /
+Data: 2022-09-18 - Hora: 17:19:52 - Rota: /produtos
+Data: 2022-09-18 - Hora: 17:19:52 - Rota: /contato
+Data: 2022-09-18 - Hora: 17:19:53 - Rota: /minhaConta
+Data: 2022-09-18 - Hora: 17:19:54 - Rota: /cadastro
+Data: 2022-09-18 - Hora: 17:19:58 - Rota: /cadastro/sas
