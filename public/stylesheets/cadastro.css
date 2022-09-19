@@ -62,10 +62,64 @@ input {
 
 }
 button{
-    margin-top: 20px;
-    height: 30px;
-    background-color: rgb(196, 197, 197);
+    margin-top: 30px;
+    height: 40px;
+    color: #f1f1f1;
+    background-color: #333;
     border: 1px solid rgb(140, 140, 140);
     border-radius: 5px;
     font-weight: 600;
+    font-size: 1rem;
 }
+
+.inputFile {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 1.8rem;
+  }
+  
+  .inputFile input {
+    margin: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  
+  .inputFile-custom {
+    text-align: left;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 2.45rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #444;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 .5px .5px rgba(0, 0, 0, .05);
+    user-select: none;
+  }
+  
+  .inputFile-custom:before {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: 6;
+    display: block;
+    content: "Arquivo";
+    height: 1.3rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #f1f1f1;
+    background-color: rgb(69, 69, 69);
+    border: 1px solid rgb(69, 69, 69);
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .inputFile-custom:after {
+    content: "Carregar... Foto de Perfil";
+  }
