@@ -22,5 +22,11 @@
         "email": "asda@me.com",
         "senha": "111111",
         "imagemUsuario": "imagemUsuario_1663550130956.ico"
+    },
+    {
+        "nomeCompleto": "Jonas Henrique Lima",
+        "email": "jonas.herique@email.com",
+        "senha": "1234",
+        "imagemUsuario": "imagemUsuario_1663558303390.jpg"
     }
 ]

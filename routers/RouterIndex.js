@@ -13,26 +13,7 @@ const multerDiskStorage = require("../middlewares/multerDiskStorage");
 // Funcao que ira receber os dados e passar para o storage fazer o trabalho de destination e filename
 const upload = multer({ storage: multerDiskStorage});
 
-//-------------------BLOCO EXPRESS-VALIDATOR------------------//
 
-// Requisicao do express-validator destruturacao do body
-const { body } = require('express-validator');
-
-// Variavel do tipo array para validacao de cada campo do body como funcao do express-validator
-const validacoes = [
-    body("nomeCompleto")
-        .notEmpty().withMessage('Deve preecher o campo nome').bail()
-        .isLength({ min:5 }).withMessage('O nome deve ser maior'),
-
-    body("email")
-        .notEmpty().withMessage('Deve preecher o campo Email').bail()
-        .isEmail().withMessage('Deve preecher um e-mail valido'),
-
-    body("senha")
-        .notEmpty().withMessage('Deve preecher o campo senha').bail()
-        .isLength({min:5, max:10}).withMessage('Senha com omínimo de 5 caracteres e no máximo 10 caracteres')
-];
-//------------------------------------------------------------//
 
 // Confiuracao do modulo express para chamar a função como router
 const router = express.Router();
@@ -57,6 +38,27 @@ router.get('/minhaConta', IndexController.minhaConta);
 
 // Rota para página CADASTRO
 router.get('/cadastro', IndexController.cadastro);
+
+//-------------------BLOCO EXPRESS-VALIDATOR------------------//
+
+// Requisicao do express-validator destruturacao do body
+const { body } = require('express-validator');
+
+// Variavel do tipo array para validacao de cada campo do body como funcao do express-validator
+const validacoes = [
+    body("nomeCompleto")
+        .notEmpty().withMessage('Deve preecher o campo nome').bail()
+        .isLength({ min:5 }).withMessage('O nome deve ser maior'),
+
+    body("email")
+        .notEmpty().withMessage('Deve preecher o campo Email').bail()
+        .isEmail().withMessage('Deve preecher um e-mail valido'),
+
+    body("senha")
+        .notEmpty().withMessage('Deve preecher o campo senha').bail()
+        .isLength({min:5, max:10}).withMessage('Senha com omínimo de 5 caracteres e no máximo 10 caracteres')
+];
+//------------------------------------------------------------//
 
 // No Segundo parametro efetuamos as validacoes dos campo de formulário
 // No terceiro parametro temos o middleware de rota para chamar a funcao multer onde indicamos o caminho onde sera salvo o arquivo e nome desse arquivo (IMAGEM USUARIO)
