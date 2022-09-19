@@ -16,10 +16,10 @@ function registroRotaHome (req, res, next) {
     let caminhoRegistroLogRotas = path.resolve(`./logs/registroRotaHome/${strDataHora.substring(0,10)}_logRotaHome.txt`);
 
     // Define uma variavel para captura da rota ao acessa-la
-    let rota = req.url;
+    let rotaHome = req.url;
 
     // Inclui no arquivo txt a data e hora e a rota url acessada e pula uma linha
-    fs.appendFileSync(caminhoRegistroLogRotas,`Data: ${strDataHora} - Rota: ${rota}\n`);
+    fs.appendFileSync(caminhoRegistroLogRotas,`Data: ${strDataHora} - Rota: ${rotaHome}\n`);
 
     // Passa para o proximo Middleware
     next();

@@ -10,5 +10,11 @@
         "email": "alessandro.herique@email.com",
         "senha": "54321",
         "imagemUsuario": "imagemUsuario_1663544137870.png"
+    },
+    {
+        "nomeCompleto": "Viana Henrique Lima",
+        "email": "viana.herique@email.com",
+        "senha": "@6578hrs",
+        "imagemUsuario": "imagemUsuario_1663549502163.ico"
     }
 ]

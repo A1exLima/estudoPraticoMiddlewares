@@ -1,0 +1,11 @@
+Data: 2022-09-19 - Hora: 01:03:30 - Rota: /
+Data: 2022-09-19 - Hora: 01:03:30 - Rota: /favicon.ico
+Data: 2022-09-19 - Hora: 01:03:34 - Rota: /minhaConta
+Data: 2022-09-19 - Hora: 01:03:36 - Rota: /cadastro
+Data: 2022-09-19 - Hora: 01:03:38 - Rota: /cadastro
+Data: 2022-09-19 - Hora: 01:03:40 - Rota: /cadastro
+Data: 2022-09-19 - Hora: 01:03:46 - Rota: /cadastro
+Data: 2022-09-19 - Hora: 01:03:47 - Rota: /cadastro
+Data: 2022-09-19 - Hora: 01:05:02 - Rota: /cadastro
+Data: 2022-09-19 - Hora: 01:05:05 - Rota: /cadastro
+Data: 2022-09-19 - Hora: 01:05:07 - Rota: /cadastro
