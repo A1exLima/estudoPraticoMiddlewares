@@ -35,12 +35,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Faz a requisicao da do Middleware de captura de rotas
 const registroRotas = require('./middlewares/logRotas'); 
-// Inclui como parametro o Middleware global para capturar a data hora e rota acessada
-app.use(registroRotas);
 
 // Router Index
+// 2 Parametro solicita o middleware global para registro de acesso das rotas do site
 const IndexRouter = require ('./routers/RouterIndex');
-app.use('/', IndexRouter);
+app.use('/', registroRotas, IndexRouter);
 
 //.................................................................................
 

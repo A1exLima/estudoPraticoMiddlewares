@@ -16,5 +16,11 @@
         "email": "viana.herique@email.com",
         "senha": "@6578hrs",
         "imagemUsuario": "imagemUsuario_1663549502163.ico"
+    },
+    {
+        "nomeCompleto": "Alex da Silva Lima",
+        "email": "asda@me.com",
+        "senha": "111111",
+        "imagemUsuario": "imagemUsuario_1663550130956.ico"
     }
 ]

@@ -1,1 +1,13 @@
 Data: 2022-09-19 - Hora: 01:03:30 - Rota: /
+Data: 2022-09-19 - Hora: 01:14:35 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:07 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:08 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:08 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:13 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:13 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:13 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:14 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:14 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:14 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:14 - Rota: /
+Data: 2022-09-19 - Hora: 01:15:35 - Rota: /
