@@ -3,14 +3,33 @@
             <link rel="stylesheet" href="/stylesheets/cadastro.css">
 
             <h1>Cadastrar Usuário</h1>
+            
+            <% if(typeof erros !== "undefined"){ %>
+
+                <ul>
+                    <% for(let erro in erros) { %>
+                        <li> 
+                            <b> <%= erro %>: </b> 
+                            <%= erros[erro].msg %> 
+                        </li>
+                    <% } %>
+                </ul>
+
+            <% } %> 
+
+            <% if(flagImg == 1) { %>
+
+                <p> <b>Imagem Perfil:</b> Imagem não enviada!</p>
+
+            <% } %>
 
             <!-- Warning: Atributo Enctype para processamento de arquivo-->
-            <form action="/cadastro" method="POST" enctype="multipart/form-data">
+            <form action="/cadastro" method="post" enctype="multipart/form-data">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nomeCompleto" id="nome">
+                <input type="text" name="nome" id="nome" value="<%=locals.old && old.nome%>">
 
                 <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" value="<%=locals.old && old.email%>">
 
                 <label for="senha">Senha:</label>
                 <input type="password" name="senha" id="senha">

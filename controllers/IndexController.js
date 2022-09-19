@@ -4,6 +4,9 @@ const dadosUsuario = require("../database/dadosUsuario.json")
 // Requisicao do modulo nativo file system
 const fs = require('fs');
 
+// Requisicao do Express Validator
+const {validationResult} = require('express-validator'); 
+
 // Objeto Literal ja pronto para exportacao de todos os controllers
 module.exports ={
 
@@ -28,37 +31,42 @@ module.exports ={
 
     },
 
+    cadastro: (req, res) =>{
+        res.render("cadastro.ejs",{flagImg: 0}); // Se flag for 0 nao aparece mensagem de erro
+
+    },
+
     processingData: (req, res) => {
 
-        // Verifica se o req.file é false (undefined) se sim executar o código abaixo
-        if (!req.file) {
-
-            return res.send("Imagem Não Enviada!");
+        let erros = validationResult(req);
             
-        } else {
+        if(!erros.isEmpty()){
+            return res.render('cadastro.ejs', { erros: erros.mapped(), old: req.body, flagImg: 1 }); // Se flag for 1. Aparece mensagem de erro relacionado a imagem nao enviada
 
-            // Captura dos dados (NOME, E-MAIL E SENHA) enviados via Método Post através do req.body e salva em uma variavel
-            let dados = req.body;
+        } else{
 
-            // Inclui do nome do arquivo de imagem do usuário na variavel Dados
-            dados.imagemUsuario = req.file.filename;
+            // Verifica se o req.file é false (undefined) se sim executar o código abaixo
+            if (!req.file) {    
 
-            // Inclusao do nome de usuario e senha da ultima posicao do array do banco de dados onde é guardado todos os usuarios e senhas
-            dadosUsuario.push(dados);
-    
-            // conversao dos dados em tipo Json, e atraves da funcao nativa fs o salvamento desses dados dentro da database em formato json
-            fs.writeFileSync('./database/dadosUsuario.json', JSON.stringify(dadosUsuario, null, 4));
-    
-            //Redirecionamento para a página de confirmacao do novo usuario e senha criada e exibicao de todos os usuarios e senhas para confirmacao
-            res.send('CADASTRO EFETUADO COM SUCESSO');
+            return res.render('cadastro.ejs', { erros: erros.mapped(), old: req.body, flagImg: 1}); // Se flag for 1. Aparece mensagem de erro relacionado a imagem nao enviada
+            
+            } else {
+                // Captura dos dados (NOME, E-MAIL E SENHA) enviados via Método Post através do req.body e salva em uma variavel
+                let dados = req.body;
+
+                // Inclui do nome do arquivo de imagem do usuário na variavel Dados
+                dados.imagemUsuario = `/images/profileUser/${req.file.filename}`;
+
+                // Inclusao do nome de usuario, e-mail, senha e local img na ultima posicao do array do banco de dados onde é guardado todos os usuarios e senhas
+                dadosUsuario.push(dados);
+        
+                // conversao dos dados em tipo Json, e atraves da funcao nativa fs o salvamento desses dados dentro da database em formato json
+                fs.writeFileSync('./database/dadosUsuario.json', JSON.stringify(dadosUsuario, null, 4));
+                
+                //Redirecionamento para a página de confirmacao do novo usuario criado
+                res.render('confirmacaoCadastro.ejs', {nomeImg: dados.imagemUsuario, nomeUsuario: req.body.nome});
+            }
         }
-
-    },
-
-    cadastro: (req, res) =>{
-        res.render("cadastro.ejs");
-
-    },
-
+    }
 }
 

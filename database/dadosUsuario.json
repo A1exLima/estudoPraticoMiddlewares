@@ -1,32 +1,8 @@
 [
     {
-        "nomeCompleto": "Paulo Henrique Lima",
-        "email": "paulo.herique@email.com",
-        "senha": "12345",
-        "imagemUsuario": "imagemUsuario_1663544107121.png"
-    },
-    {
-        "nomeCompleto": "Alessandro Henrique Lima",
-        "email": "alessandro.herique@email.com",
-        "senha": "54321",
-        "imagemUsuario": "imagemUsuario_1663544137870.png"
-    },
-    {
-        "nomeCompleto": "Viana Henrique Lima",
-        "email": "viana.herique@email.com",
-        "senha": "@6578hrs",
-        "imagemUsuario": "imagemUsuario_1663549502163.ico"
-    },
-    {
-        "nomeCompleto": "Alex da Silva Lima",
-        "email": "asda@me.com",
-        "senha": "111111",
-        "imagemUsuario": "imagemUsuario_1663550130956.ico"
-    },
-    {
-        "nomeCompleto": "Jonas Henrique Lima",
+        "nome": "Jonas Henrrique",
         "email": "jonas.herique@email.com",
-        "senha": "1234",
-        "imagemUsuario": "imagemUsuario_1663558303390.jpg"
+        "senha": "12345",
+        "imagemUsuario": "/images/profileUser/imagemUsuario_1663608210922.png"
     }
 ]
